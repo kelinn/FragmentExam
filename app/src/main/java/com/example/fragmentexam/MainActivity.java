@@ -29,15 +29,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         fragmentoSeleccionado = new GridFragmento();
-
                 }
                 FragmentManager fragmentManager= getSupportFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.fragmento,fragmentoSeleccionado);
                 transaction.commit();
-
+                //comment
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
